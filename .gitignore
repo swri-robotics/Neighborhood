@@ -87,3 +87,7 @@ NeighborhoodCodeCompletionFolders.txt
 NeighborhoodCodeLitePreProcessor.txt
 Plugins/*
 LinuxNoEditor
+
+# JetBrains CLion
+.idea
+cmake-build-*/
