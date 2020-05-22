@@ -17,7 +17,7 @@ Next, install some packages we'll use:
 
 ```bash
 sudo apt update
-sudo apt install build-essential git git-lfs gcc-8 g++8 python-catkin-tools
+sudo apt install build-essential git git-lfs gcc-8 g++-8 python-catkin-tools
 ```
 
 Building the Environment
