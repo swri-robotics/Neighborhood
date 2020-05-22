@@ -15,28 +15,33 @@ Building the Environment
    Also install [ue4cli](https://github.com/adamrehn/ue4cli)
    to provide a nice command line interface for it.
 
-2. Clone SwRI's AirSim fork:
+2. Install some prerequisites:
+   ```bash
+   sudo apt update && sudo apt install build-essential git git-lfs gcc-8 g++-8
+   ```
+
+3. Clone SwRI's AirSim fork:
    ```bash
    mkdir -p $HOME/src/
    cd $HOME/src
    git clone https://github.com/swri-robotics/AirSim.git
    ```
 
-3. Clone this repository inside AirSim's Unreal/Environments directory:
+4. Clone this repository inside AirSim's Unreal/Environments directory:
    ```bash
    mkdir -p $HOME/src/AirSim/Unreal/Environments/
    cd $HOME/src/AirSim/Unreal/Environments/
    git clone https://github.com/swri-robotics/Neighborhood.git
    ```
 
-4. Build AirSim:
+5. Build AirSim:
    ```bash
    cd $HOME/src/AirSim
    ./setup.sh
    ./build-neighborhood.sh
    ```
 
-5. Run the Neighborhood environment:
+6. Run the Neighborhood environment:
    ```bash
    cd $HOME/src/AirSim/Unreal/Environments/Neighborhood
    ue4 build
