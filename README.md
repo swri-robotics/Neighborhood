@@ -62,6 +62,7 @@ Building the ROS Node
    ```bash
    cd $HOME/src/AirSim/ros
    . /opt/ros/melodic/setup.bash
+   rosdep install src -y --from-paths -i
    catkin init
    catkin config -e /opt/ros/melodic
    catkin config --install
@@ -72,6 +73,21 @@ Building the ROS Node
    ```bash
    CC=gcc-8 CXX=g++-8 catkin build
    ```
+
+Configuring Airsim
+------------------
+
+1. Copy the `settings.json` file in this repository into this appropriate location:
+   ```bash
+   mkdir $HOME/Documents/AirSim/
+   cp settings.json $HOME/Documents/AirSim/
+   ```
+
+2. The default settings are a reasonable approximation of sensors available on a
+   real vehicle, but you may have performance issues.  Consult
+   [settings.md](docs/settings.md) for documentation on available parameters.
+   In particular, reducing the number of camera and the cameras' resolutions
+   will significantly improve performance.
 
 Running the Simulation
 ----------------------
