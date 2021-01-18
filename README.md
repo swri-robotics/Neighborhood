@@ -85,7 +85,7 @@ Configuring Airsim
 
 2. The default settings are a reasonable approximation of sensors available on a
    real vehicle, but you may have performance issues.  Consult
-   [settings.md](docs/settings.md) for documentation on available parameters.
+   [settings.md](https://microsoft.github.io/AirSim/settings/) for documentation on available parameters.
    In particular, reducing the number of camera and the cameras' resolutions
    will significantly improve performance.
 
