@@ -42,14 +42,20 @@ Building the Environment
    git clone https://github.com/swri-robotics/Neighborhood.git
    ```
 
-4. Build AirSim:
+4. Use git-lfs to grab the full contents of the directory:
+```bash
+cd $HOME/src/AirSim/Unreal/Environments/Neighborhood
+git lfs pull
+```
+
+5. Build AirSim:
    ```bash
    cd $HOME/src/AirSim
    ./setup.sh
    ./build-neighborhood.sh
    ```
 
-5. Build the Neighborhood environment:
+6. Build the Neighborhood environment:
    ```bash
    cd $HOME/src/AirSim/Unreal/Environments/Neighborhood
    ue4 build
